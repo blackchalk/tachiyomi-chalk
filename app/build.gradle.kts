@@ -21,7 +21,7 @@ android {
     namespace = "eu.kanade.tachiyomi"
 
     defaultConfig {
-        applicationId = "eu.kanade.tachiyomi"
+        applicationId = "ph.blackchalk.tachiyomichalk"
         versionCode = 99
         versionName = "0.14.5"
 

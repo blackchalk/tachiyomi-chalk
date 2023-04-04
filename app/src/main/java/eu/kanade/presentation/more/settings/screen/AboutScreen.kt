@@ -191,7 +191,7 @@ object AboutScreen : Screen() {
         withUIContext {
             context.toast(R.string.update_check_look_for_updates)
             try {
-                when (val result = withIOContext { updateChecker.checkForUpdate(context, isUserPrompt = true) }) {
+                when (val result = withIOContext { updateChecker.checkForUpdate(context, isUserPrompt = false) }) {
                     is AppUpdateResult.NewUpdate -> {
                         onAvailableUpdate(result)
                     }
